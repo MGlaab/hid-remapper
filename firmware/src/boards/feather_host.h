@@ -8,7 +8,12 @@
 
 #define FEATHER_HOST_BOARD
 
-#define GPIO_VALID_PINS_BASE 0b00111111000000001101111111111111
+#define ADC_ENABLED
+#define NADCS 4
+
+// old vlaues #define GPIO_VALID_PINS_BASE 0b00111111000000001101111111111111
+// new values updated.
+#define GPIO_VALID_PINS_BASE 0b00100001000000001101111111111111
 
 // On some samples, the xosc can take longer to stabilize than is usual
 #ifndef PICO_XOSC_STARTUP_DELAY_MULTIPLIER
